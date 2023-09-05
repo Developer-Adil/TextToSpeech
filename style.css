@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Serif+Display:ital@0;1&family=Lilita+One&family=Poppins:wght@400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(38, 38, 38);
+    background: linear-gradient(29deg, rgba(38, 38, 38, 1) 0%, rgba(35, 53, 49, 1) 27%, rgba(29, 88, 75, 1) 49%, rgba(0, 255, 196, 1) 100%);
+}
+
+.speech-container {
+    padding: 2rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.09);
+    /* Adjust the alpha value for transparency */
+}
+
+.speech-container,
+textarea {
+    color: rgb(255, 255, 255);
+}
+
+.speech-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 0 10px black);
+}
+
+textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    padding: 2rem 0;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 1.1rem;
+    background: none;
+    filter: drop-shadow(0 0 10px black);
+}
+
+textarea::placeholder {
+    color: #ffffff;
+    filter: drop-shadow(0 0 5px black);
+}
+
+#speech {
+    width: 10rem;
+    padding: .8rem;
+    margin: 0 auto;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.2rem;
+    border-radius: 15rem;
+    display: inline-block;
+    transition: all .3s linear;
+    border: none;
+    background: rgb(38, 38, 38);
+    background: linear-gradient(29deg, rgba(38, 38, 38, 1) 0%, rgba(35, 53, 49, 1) 27%, rgba(29, 88, 75, 1) 49%, rgba(0, 255, 196, 1) 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+#speech:hover {
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: none;
+}
